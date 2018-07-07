@@ -4,8 +4,6 @@ const tokenize = require('./tokenizer').tokenize
 const parse = require('./parser').parse
 
 let guideMsg = `
-Please specify input/output path
-
 *** Guide ***
 
 ### Python Language Toknizer:
@@ -63,22 +61,20 @@ const commandLineArgs = require('command-line-args')
 const options = commandLineArgs(optionDefinitions)
 
 if (options.tokenize === undefined && options.parse === undefined) {
-    if (options.src === undefined || options.dst === undefined) {
-        console.log(guideMsg)
-        process.exit(0)
-    }
-
     console.log('please specify your desired action')
+    console.log(guideMsg)
     process.exit(0)
 }
 
 if (options.parse === true && options['method'] === undefined) {
     if (options.src === undefined) {
         console.log('please specify grammer path')
+        console.log(guideMsg)
         process.exit(0)
     }
 
     console.log('please specify parsing method')
+    console.log(guideMsg)
     process.exit(0)
 }
 
