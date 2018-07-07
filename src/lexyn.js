@@ -7,22 +7,22 @@ let guideMsg = `
 *** Guide ***
 
 ### Python Language Toknizer:
-src/lexyn.js --tokenize --src path/to/src --dst path/to/dst
+./src/lexyn.js --tokenize --src path/to/src --dst path/to/dst
 
 [example]:
-src/lexyn.js --tokenize --src py_lex_test.txt --dst tmp.txt
+./src/lexyn.js --tokenize --src py_lex_test.txt --dst tmp.txt
 
 ### Parser:
-src/lexyn.js --parse --method [lr1, lalr1, sl1, ll1] --src path/to/grammer
+./src/lexyn.js --parse --method [lr1, lalr1, sl1, ll1] --src path/to/grammer
 
 [example]:
-src/lexyn.js --parse --method lalr1 --src grammer_lr.txt
+./src/lexyn.js --parse --method lalr1 --src grammer_lr.txt
 
 ### Parser & Parsing Steps:
-src/lexyn.js --parse --method [lr1, lalr, sl1, ll1] --src path/to/grammer --input <some_text>
+./src/lexyn.js --parse --method [lr1, lalr, sl1, ll1] --src path/to/grammer --input <some_text>
 
 [example]:
-src/lexyn.js --parse --method lalr --src grammer_lr.txt --input cdd
+./src/lexyn.js --parse --method lalr --src grammer_lr.txt --input cdd
 `
 
 const optionDefinitions = [{
