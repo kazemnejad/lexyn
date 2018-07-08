@@ -10,10 +10,10 @@ if diosaj
     sss
     "ss \" 'sal' ss"
     'ss \' """"sal""" ss'
-    goh
+    ksk
     
     """
-    skajd to "" ammat 
+    skajd to "" kps 
     """
     '''
     ssdsds #if
