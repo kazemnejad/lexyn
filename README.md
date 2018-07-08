@@ -11,5 +11,6 @@ Features:
 2. `cd lexyn-master`
 3. `brew install python@3 node`
 4. `npm install`
-5. `chmod a+x src/lexyn.js`
-6. `./src/lexyn.js`
+5. `pip3 install ply`
+6. `chmod a+x src/lexyn.js`
+7. `./src/lexyn.js`
